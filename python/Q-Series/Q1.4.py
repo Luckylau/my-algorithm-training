@@ -43,3 +43,7 @@ class Test(unittest.TestCase):
         for test_string, expected in self.data:
             res = check_permutation(test_string)
             self.assertEqual(res, expected)
+
+
+if __name__ == '__main__':
+    unittest.main()
