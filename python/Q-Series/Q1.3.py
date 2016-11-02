@@ -18,7 +18,7 @@ def replace(str):
             counter += 1
     new_len = length + counter * 2
     #new_str = [0] * new_len
-    new_str=[0 for _ in range(new_len)]
+    new_str = [0 for _ in range(new_len)]
     for i in reversed(str):
         if i == ' ':
             new_str[new_len - 3:new_len] = '%20'
