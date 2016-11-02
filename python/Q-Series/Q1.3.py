@@ -12,20 +12,19 @@ import unittest
 
 def replace(str):
     length = len(str)
-    string = list(str)
     counter = 0
-    for i in range(length):
-        if string[i] == ' ':
+    for i in str:
+        if i == ' ':
             counter += 1
     new_len = length + counter * 2
     #new_str = [0] * new_len
     new_str=[0 for _ in range(new_len)]
-    for i in reversed(range(length)):
-        if string[i] == ' ':
+    for i in reversed(str):
+        if i == ' ':
             new_str[new_len - 3:new_len] = '%20'
             new_len -= 3
         else:
-            new_str[new_len - 1] = string[i]
+            new_str[new_len - 1] = i
             new_len -= 1
     return ''.join(new_str)
 
