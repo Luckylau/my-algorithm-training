@@ -23,6 +23,9 @@ def getSubsets(setz, index):
 
     return allSubsets
 
+def getSubsets2(setz):
+    pass
+
 
 if __name__ == '__main__':
     set = ([1, 2, 3])
