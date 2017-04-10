@@ -63,13 +63,13 @@ def Tower(N):
     return newstack
 
 
-def operate(N, start, end, buff, stack):
+def operate(N, start, buff, end, stack):
     if N == 1:
         stack.Push(stack.Pop(start), end)
     else:
-        operate(N - 1, start, buff, end, stack)
-        operate(1, start, end, buff, stack)
-        operate(N - 1, buff, end, start, stack)
+        operate(N - 1, start, end, buff, stack)
+        operate(1, start, buff, end, stack)
+        operate(N - 1, buff, start, end, stack)
 
 
 def printTower(newStack, stacknum):
@@ -84,6 +84,6 @@ if __name__ == '__main__':
     tower = Tower(N)
     print 'Tower in 0'
     printTower(tower, 0)
-    operate(N, 0, 2, 1, tower)
+    operate(N, 0, 1, 2, tower)
     print 'Tower in 2'
     printTower(tower, 2)
