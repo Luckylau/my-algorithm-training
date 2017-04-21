@@ -11,7 +11,7 @@ def MergeArray(A, B):
     indexA = index - indexB - 1
 
     while indexB >= 0:
-        if indexA > 0 and A[indexA] >= B[indexB]:
+        if indexA >= 0 and A[indexA] >= B[indexB]:
             A[index] = A[indexA]
             indexA -= 1
         else:
@@ -25,7 +25,7 @@ def arrayA(length, buffer):
 
     A = [0] * (buffer + length)
     for i in range(length):
-        A[i] = i * 2 + 1
+        A[i] = i * 2 + 2
     return A
 
 
@@ -33,7 +33,7 @@ def arrayB(length):
 
     B = [0] * length
     for i in range(length):
-        B[i] = 2 + i * 2
+        B[i] = 1 + i * 2
     return B
 
 if __name__ == '__main__':
