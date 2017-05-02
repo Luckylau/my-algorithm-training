@@ -18,7 +18,7 @@ import java.util.Stack;
 
 public class BinaryTreePreorderTraversal {
 	
-	//方法一
+	//1
 	 public ArrayList<Integer> preorderTraversal(TreeNode root) {
 	        // write your code here
 	        Stack<TreeNode> stack = new Stack<TreeNode>();
@@ -42,7 +42,7 @@ public class BinaryTreePreorderTraversal {
 	            
 	    }
 	 
-	 //方法二
+	 //2
 	 public ArrayList<Integer> preorderTraversal2(TreeNode root) {
 	        // write your code here
 	        ArrayList<Integer> preorder = new ArrayList<Integer>();
@@ -59,7 +59,7 @@ public class BinaryTreePreorderTraversal {
 	        traverse (root.right ,preorder);
 	    }
 	 
-	 //方法三
+	 //3
 	 public ArrayList<Integer> preorderTraversal3(TreeNode root) {
 	        // write your code here
 	        ArrayList<Integer> preorder = new ArrayList<Integer>();
