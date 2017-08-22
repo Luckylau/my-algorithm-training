@@ -16,24 +16,6 @@ public class MergeSortedArray {
 	
 	public void mergeSortedArray(int[] A, int m, int[] B, int n) {
         // write your code here
-        int lengthA = A.length -1;
-        int lengthB = B.length -1;
-        int len = lengthA - lengthB - 1;
-        
-        while (lengthB >= 0) {
-            if (len >= 0 && A[len] >= B[lengthB]) {
-                A[lengthA] = A[len];
-                len--;
-            }else {
-                A[lengthA] = B[lengthB];
-                lengthB--;
-            }
-            lengthA--;
-        }
-    }
-	
-	public void mergeSortedArray2(int[] A, int m, int[] B, int n) {
-        // write your code here
         int index = m + n;
         while (m > 0 && n > 0) {
             if (A[m - 1] > B[n -1]) {
@@ -53,11 +35,6 @@ public class MergeSortedArray {
 		MergeSortedArray mergeSortedArray = new MergeSortedArray();
 		mergeSortedArray.mergeSortedArray(A, 5, B, 4);
 		System.out.println(Arrays.toString(A));
-		int [] AA=new int [] {9,10,11,12,13,0,0,0,0};
-		int [] BB=new int [] {4,5,6,7};
-		mergeSortedArray.mergeSortedArray2(AA, 5, BB, 4);
-		System.out.println(Arrays.toString(AA));
-
 	}
 
 }
