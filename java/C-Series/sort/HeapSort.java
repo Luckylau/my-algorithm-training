@@ -22,8 +22,8 @@ public class HeapSort {
 
 	private void HeapAdjust(int[] nums, int index, int length) {
 		int tmp = nums[index];
-		for (int i = 2 * index + 1; i < length; i = 2 * i + 1) {
-			if (i < length && nums[i] < nums[i + 1]) {
+		for (int i = 2 * index + 1; i < length - 1; i = 2 * i + 1) {
+			if (nums[i] < nums[i + 1]) {
 				i++;
 			}
 			if (tmp >= nums[i]) {
@@ -38,7 +38,7 @@ public class HeapSort {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] nums = { 2, 1, 3, 4, 9, 6, 7, 8, 5 };
+		int[] nums = new int[] { 13, 6, 8, 9, 2, 1, };
 		System.out.println(Arrays.toString(nums));
 		HeapSort HeapSort = new HeapSort();
 		HeapSort.heapSort(nums);
