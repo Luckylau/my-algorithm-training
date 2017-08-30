@@ -23,11 +23,11 @@ public class QuickSort {
 	private int Partition(int[] nums, int low ,int high){
 		int tmp =nums[low];
 		while(low < high){
-			while(low < high && nums[high] > tmp){
+			while(low < high && nums[high] >= tmp){
 				high--;
 			}
 			nums[low] =nums[high];
-			while(low < high && nums[low] < tmp){
+			while(low < high && nums[low] <= tmp){
 				low++;
 			}
 			nums[high]=nums[low];
