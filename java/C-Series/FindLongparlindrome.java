@@ -1,5 +1,9 @@
 package demo;
-
+/**
+ * 查找一个字符串中的最长回文字串
+ * @author Jasonlau
+ *
+ */
 public class FindLongparlindrome {
 	public String findLongparlindrome(String str) {
 		if (str.length() == 0 || str == null) {
