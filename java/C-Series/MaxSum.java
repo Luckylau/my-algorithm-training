@@ -2,7 +2,9 @@ package demo;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class MaxSum {
 
@@ -23,6 +25,7 @@ public class MaxSum {
 	}
 
 	public List<Integer> maxSum2(int[] nums) {
+		Map<Integer, List<Integer>> map = new HashMap<Integer, List<Integer>>();
 		List<Integer> list = new ArrayList<Integer>();
 		int sum = nums[0];
 		int tmp = 0;
@@ -30,26 +33,23 @@ public class MaxSum {
 			if (tmp >= 0) {
 				tmp += nums[i];
 				list.add(nums[i]);
-				if (i == nums.length - 1 && tmp < sum) {
-					list.remove(list.size() - 1);
-				}
 			} else {
 				tmp = nums[i];
 				list.clear();
 				list.add(nums[i]);
 
 			}
+			map.put(tmp, new ArrayList<Integer>(list));
 			if (tmp > sum) {
 				sum = tmp;
 			}
 		}
-		System.out.println(sum);
-		return list;
+		return map.get(sum);
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] nums = new int[] { 1, -2, 3, 10, -4, 7, 2, 5 };
+		int[] nums = new int[] { 2, -1, -9, 1, 2, 3, -1, -2, -3 };
 		MaxSum maxSum = new MaxSum();
 		System.out.println(maxSum.maxSum(nums));
 		System.out.println(Arrays.toString(maxSum.maxSum2(nums).toArray()));
