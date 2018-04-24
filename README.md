@@ -9,7 +9,7 @@ From Nine Chapter
 
 ### **C系列**
 
-Collect interesting algorithms ( leecode )
+Collect interesting algorithms ( leecode and so on ...)
 
 ### **可视化算法**
 
