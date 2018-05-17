@@ -27,7 +27,6 @@ public class ReverseLinkedList {
 	 }
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		ListNode head = new ListNode(1);
 		ListNode node = new ListNode(2);
 		ListNode node2 = new ListNode(3);

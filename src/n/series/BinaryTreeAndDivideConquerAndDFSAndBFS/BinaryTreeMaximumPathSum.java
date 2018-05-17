@@ -32,6 +32,14 @@ public class BinaryTreeMaximumPathSum {
         return new ResultType(singlePath, maxPath);
         
     }
+	static class ResultType {
+		int singlePath;//root to any
+		int maxPath;//any to any
+		public ResultType(int singlePath , int maxPath) {
+			this.singlePath = singlePath;
+			this.maxPath = maxPath;
+		}
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -64,11 +72,4 @@ public class BinaryTreeMaximumPathSum {
 		System.out.println(binaryTreeMaximumPathSum.maxPathSum(node15));
 	}
 }
-class ResultType {
-    int singlePath;//root to any
-    int maxPath;//any to any
-    public ResultType(int singlePath , int maxPath) {
-        this.singlePath = singlePath;
-        this.maxPath = maxPath;
-    }
-}
+

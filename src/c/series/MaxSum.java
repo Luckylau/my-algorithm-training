@@ -48,7 +48,6 @@ public class MaxSum {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int[] nums = new int[] { 2, -1, -9, 1, 2, 3, -1, -2, -3 };
 		MaxSum maxSum = new MaxSum();
 		System.out.println(maxSum.maxSum(nums));

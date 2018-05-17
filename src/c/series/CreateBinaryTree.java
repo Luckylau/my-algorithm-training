@@ -2,7 +2,7 @@ package c.series;
 
 public class CreateBinaryTree {
 	public TreeNode createBinaryTree(int[] nums) {
-		if (nums.length == 0 || nums == null) {
+		if (nums == null || nums.length == 0) {
 			return null;
 		}
 		return helper(nums, 0, nums.length - 1);
@@ -20,7 +20,6 @@ public class CreateBinaryTree {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int[] nums = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 		CreateBinaryTree createBinaryTree = new CreateBinaryTree();
 		createBinaryTree.createBinaryTree(nums);

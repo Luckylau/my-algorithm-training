@@ -77,7 +77,7 @@ public class BinaryTreePreorderTraversal {
 	    }
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		TreeNode root = new TreeNode(1);
 		TreeNode node1 = new TreeNode(2);
 		TreeNode node2 = new TreeNode(3);

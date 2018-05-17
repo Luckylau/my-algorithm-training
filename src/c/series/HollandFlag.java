@@ -3,14 +3,12 @@ package c.series;
 import java.util.Arrays;
 
 /**
- * ����n����������ֲ�ͬ��ɫ��С������������һ����ͨ�������������������� ʹ�ô������ҵ�������Ϊ���򡢰�������
- * �������֮���Խк������죬����Ϊ���������ɫ��С��Ū����״����������к�������ɺ������졣 �죺0 ���� ��1������2
  *
  */
 public class HollandFlag {
 
 	public void hollandFlag(int[] nums) {
-		if (nums.length == 0 || nums == null) {
+		if (nums == null || nums.length == 0) {
 			return;
 		}
 		int cur = 0;
@@ -36,7 +34,6 @@ public class HollandFlag {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int[] nums= new int[] { 2, 0, 1, 0, 1, 2, 1, 0, 0, 0 ,1};
 		HollandFlag hollandFlag = new HollandFlag();
 		hollandFlag.hollandFlag(nums);

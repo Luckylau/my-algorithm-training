@@ -1,7 +1,6 @@
 package c.series;
 
 /**
- * ʵ��һ��atoi���������ַ���ת������ Ҫ�㣺�������е��������
  * 
  */
 public class StringtoInteger {
@@ -63,7 +62,6 @@ public class StringtoInteger {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		String s = "9223372036854775809";
 		StringtoInteger stringtoInteger = new StringtoInteger();
 		System.out.println(stringtoInteger.myAtoi(s));

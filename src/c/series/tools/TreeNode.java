@@ -1,7 +1,7 @@
 package c.series.tools;
 
 /**
- * @author liujun
+ * @author luckylau
  * @date 2018/4/24/024 16:13
  */
 public class TreeNode {

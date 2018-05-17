@@ -1,8 +1,7 @@
 package c.series;
 
 /**
- * 
- * �������
+ *
  *
  */
 public class MultilargeNum {

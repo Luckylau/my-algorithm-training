@@ -1,16 +1,13 @@
 package c.series;
 
 /**
- * ��һ�������ʼ�����ɸ�Ԫ�ذᵽ�����ĩβ�����ǳ�֮Ϊ�������ת�� 
- * ����һ���ź���������һ����ת�� �����ת�������СԪ�ء���������{3, 4, 5,
- * 1, 2}Ϊ{1, 2, 3, 4, 5}��һ����ת������ �����СֵΪ1��
  * 
  *
  */
 public class FindShiftArrayMin {
 
 	public int findShiftArrayMin(int[] nums) {
-		if (nums.length == 0 || nums == null) {
+		if (nums == null || nums.length == 0) {
 			return -1;
 		}
 		return helper(nums, 0, nums.length - 1);

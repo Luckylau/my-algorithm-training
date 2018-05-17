@@ -7,7 +7,7 @@ package c.series;
 public class FindlongDigtal {
 
 	public String findlongDigtal(String input) {
-		if (input.length() == 0 || input == null) {
+		if (input == null || input.length() == 0) {
 			return null;
 		}
 		int maxLen = 0;
@@ -34,7 +34,6 @@ public class FindlongDigtal {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		FindlongDigtal findlongDigtal = new FindlongDigtal();
 		String str = "abcd12Y3fsfsa45ed125ss14151351123456789&&&&&&";
 		System.out.println(findlongDigtal.findlongDigtal(str));

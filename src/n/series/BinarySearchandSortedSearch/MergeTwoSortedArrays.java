@@ -46,7 +46,6 @@ public class MergeTwoSortedArrays {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int[] A = new int[] { 1, 3, 5, 7, 8 };
 		System.out.println(Arrays.toString(A));
 		int[] B = new int[] { 2, 4, 6, 9, 10 };

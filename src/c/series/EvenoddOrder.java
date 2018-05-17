@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class EvenoddOrder {
 
 	public void evenoddSort(int[] nums) {
-		if (nums.length == 0 || nums == null) {
+		if (nums == null || nums.length == 0) {
 			return;
 		}
 		int start = 0;
@@ -25,7 +25,7 @@ public class EvenoddOrder {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		int[] nums = new int[] { 3, 4, 1, 5, 7, 2, 8, 10, 8, 7 };
 		EvenoddOrder evenoddSort = new EvenoddOrder();
 		evenoddSort.evenoddSort(nums);

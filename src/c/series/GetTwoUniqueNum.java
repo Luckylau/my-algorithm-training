@@ -3,14 +3,13 @@ package c.series;
 import java.util.Arrays;
 
 /**
- * һ�����������������������֮�⣬���������ֶ����������Ρ� 
- * ��д�����ҳ�������ֻ����һ�ε����֡� Ҫ��ʱ�临�Ӷ���O(n)���ռ临�Ӷ���O(1)��
+ *
  */
 public class GetTwoUniqueNum {
 
 	public int[] getTwoUniqueNum(int[] nums) {
 		int[] res = new int[] { 0, 0 };
-		if (nums.length == 0 || nums == null) {
+		if (nums == null ||nums.length == 0) {
 			return res;
 		}
 		int xor = 0;
@@ -45,7 +44,6 @@ public class GetTwoUniqueNum {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int[] nums = { 1, 2, 4, 5, 1, 2, 6, 6, 5, 8,9,8 };
 		GetTwoUniqueNum getTwoUniqueNum = new GetTwoUniqueNum();
 		System.out.println(Arrays.toString(getTwoUniqueNum.getTwoUniqueNum(nums)));

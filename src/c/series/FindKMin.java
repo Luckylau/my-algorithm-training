@@ -3,18 +3,14 @@ package c.series;
 import java.util.Arrays;
 
 /**
- * Ѱ����С��k���� ��Ŀ������������С��k��Ԫ�� ��Ŀ������n�����������������С��k����
- * ��������1��2��3��4��5��6��7��8��8�����֣�����С��4������Ϊ1��2��3��4��
+ * 寻找K个最小值
  *
  */
 public class FindKMin {
-	/**
-	 * �����������
-	 * 
-	 */
+
 	public int[] findKmin(int[] nums, int k) {
 		int[] res = new int[k];
-		if (nums.length == 0 || nums == null) {
+		if (nums == null || nums.length == 0) {
 			return res;
 		}
 		if (k >= nums.length) {
@@ -54,13 +50,9 @@ public class FindKMin {
 		return low;
 	}
 
-	/**
-	 * ��С��
-	 * 
-	 */
 	public int[] findKmin2(int[] nums, int k) {
 		int[] res = new int[k];
-		if (nums.length == 0 || nums == null) {
+		if (nums == null || nums.length == 0) {
 			return res;
 		}
 		if (k >= nums.length) {

@@ -1,15 +1,13 @@
 package c.series;
 
 /**
- * ��Ŀ������ �����ַ���������ת���������ַ���ǰ������ɸ��ַ��ƶ����ַ�����β��������ַ���abcdef����ת2λ�õ��ַ���cdefab��
- * ��ʵ���ַ�������ת�ĺ�����Ҫ��Գ���Ϊn���ַ���������ʱ�临�Ӷ�ΪO(n)���ռ临�Ӷ�ΪO(1)��
  * 
  *
  */
 public class LeftRotateString {
 
 	public String leftRotateString(String str, int pos) {
-		if (str.length() == 0 || str == null) {
+		if (str == null || str.length() == 0) {
 			return str;
 		}
 		char[] chars = str.toCharArray();

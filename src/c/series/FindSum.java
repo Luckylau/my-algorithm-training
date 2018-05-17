@@ -10,11 +10,7 @@ import java.util.Map;
  */
 public class FindSum {
 	/**
-	 * ��ٷ�
-	 * 
-	 * @param nums
-	 * @param target
-	 * @return
+	 *求和
 	 */
 	public int[] findSum(int[] nums, int target) {
 		int[] res = new int[2];

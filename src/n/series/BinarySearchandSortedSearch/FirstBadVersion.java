@@ -33,3 +33,10 @@ class Solution {
     }
 }
 
+class SVNRepo {
+    static  boolean isBadVersion(int val){
+        return val == 0 ? false : true;
+    }
+}
+
+
