@@ -1,7 +1,7 @@
 package c.series;
 
 /**
- * ����һ�Ŷ�Ԫ��������������ת��Ϊ���ľ���
+ *树的镜像
  *
  */
 public class BSTMirror {
