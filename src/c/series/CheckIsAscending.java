@@ -1,8 +1,11 @@
 package c.series;
 
+/**
+ * 递归判断是否是升序排列
+ */
 public class CheckIsAscending {
 	public boolean checkIsAscending(int[] nums) {
-		if (nums.length == 0 || nums == null) {
+		if (nums == null || nums.length == 0) {
 			return false;
 		}
 		return helper(nums, nums.length - 1);
