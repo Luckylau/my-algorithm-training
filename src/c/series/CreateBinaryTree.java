@@ -1,8 +1,11 @@
 package c.series;
 
+/**
+ * 有序数组构建二叉查找树
+ */
 public class CreateBinaryTree {
 	public TreeNode createBinaryTree(int[] nums) {
-		if (nums == null || nums.length == 0) {
+		if (nums.length == 0 || nums == null) {
 			return null;
 		}
 		return helper(nums, 0, nums.length - 1);
@@ -27,7 +30,6 @@ public class CreateBinaryTree {
 	}
 
 }
-
 class TreeNode {
 	int val;
 	TreeNode left, right;
