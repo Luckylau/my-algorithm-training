@@ -5,7 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * 从平衡二叉树找到和为某个值
+ *  题目一：从二叉树找到和为某个值的所有结果；
+ * 题目二：判断二叉树是否存在和为某个值的路径；
  */
 public class BiTreeFindSum {
 
@@ -35,6 +36,16 @@ public class BiTreeFindSum {
 
     }
 
+    public Boolean hasPathSum(TreeNode root, int sum){
+        if(root == null){
+            return false;
+        }
+        if(root.left == null && root.right == null && sum == root.val){
+            return true;
+        }
+        return hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val);
+    }
+
     public static void main(String[] args) {
         TreeNode root = new TreeNode(10);
         TreeNode TreeNode1 = new TreeNode(6);
@@ -53,6 +64,7 @@ public class BiTreeFindSum {
         TreeNode6.right = TreeNode7;
         BiTreeFindSum biTreeFindSum = new BiTreeFindSum();
         System.out.println(Arrays.deepToString(biTreeFindSum.findSumfromBiTree(root, 20).toArray()));
+        System.out.println(biTreeFindSum.hasPathSum(root, 20));
 
     }
 
