@@ -1,5 +1,8 @@
 package c.series;
 
+/**
+ *二叉树中两个节点的最大距离
+ */
 public class DistanceBTree {
 	int max = 0;
 
@@ -24,7 +27,6 @@ public class DistanceBTree {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		TreeNode root = new TreeNode(1);
 		TreeNode node1 = new TreeNode(2);
 		TreeNode node2 = new TreeNode(3);
