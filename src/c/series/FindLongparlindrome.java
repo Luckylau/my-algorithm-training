@@ -1,8 +1,6 @@
 package c.series;
 /**
- * ����һ���ַ����е�������ִ�
- * @author Jasonlau
- *
+ *查找最大回文，并输出
  */
 public class FindLongparlindrome {
 	public String findLongparlindrome(String str) {
@@ -43,7 +41,7 @@ public class FindLongparlindrome {
 		while (left >= 0 && right <= str.length() - 1) {
 			if (str.charAt(left) != str.charAt(right)) {
 				break;
-			}
+	  		}
 			left--;
 			right++;
 		}
