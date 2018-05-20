@@ -5,12 +5,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * ����һ�������һ�����֣��������в�����������ʹ�����ǵĺ�������������Ǹ����֡�
+ * 从数组中查找出和为某一值的一组数据即可。
  *
  */
 public class FindSum {
 	/**
-	 *求和
+	 *求和，暴力破解
 	 */
 	public int[] findSum(int[] nums, int target) {
 		int[] res = new int[2];
@@ -29,7 +29,7 @@ public class FindSum {
 	}
 
 	/**
-	 * ����+���ֲ���
+	 * 排序后二分查找
 	 * 
 	 * @param nums
 	 * @param target
@@ -108,7 +108,7 @@ public class FindSum {
 	}
 
 	/**
-	 * ����+��β˫ָ��
+	 * 排序后双指针
 	 * 
 	 * @param nums
 	 * @param target
@@ -136,7 +136,7 @@ public class FindSum {
 	}
 
 	/**
-	 * hash���ҷ�
+	 * hash，效果最好
 	 * 
 	 * @param nums
 	 * @param target
