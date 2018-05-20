@@ -1,7 +1,7 @@
 package c.series;
 /**
  * 
- * ���ַ������ҳ�����������ִ�������������ĳ��ȷ��ء�
+ * 查找最长数字并输出
  *
  */
 public class FindlongDigtal {
