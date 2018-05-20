@@ -3,10 +3,13 @@ package c.series;
 import java.util.Arrays;
 import java.util.Comparator;
 
+/**
+ * 给一组数，组合成最小数并输出
+ */
 public class GetMinInteger {
 
 	public String getMinInteger(int[] nums) {
-		if (nums.length == 0 || nums == null) {
+		if (nums == null || nums.length == 0) {
 			return null;
 		}
 		Integer[] res = new Integer[nums.length];
@@ -17,8 +20,7 @@ public class GetMinInteger {
 
 			@Override
 			public int compare(Integer o1, Integer o2) {
-				// TODO Auto-generated method stub
-				return ("" + o1 + 02).compareTo("" + o2 + o1);
+				return ("" + o1 + o2).compareTo("" + o2 + o1);
 			}
 		});
 		StringBuffer sb = new StringBuffer();
@@ -28,8 +30,9 @@ public class GetMinInteger {
 		return sb.toString();
 	}
 
+
 	public String getMinInteger2(int[] nums) {
-		if (nums.length == 0 || nums == null) {
+		if (nums == null || nums.length == 0) {
 			return null;
 		}
 		for (int i = 1; i < nums.length; i++) {
