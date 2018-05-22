@@ -1,8 +1,7 @@
 package c.series;
 
 /**
- * 
- *
+ *左翻转字符串
  */
 public class LeftRotateString {
 
