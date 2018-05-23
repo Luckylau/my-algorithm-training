@@ -28,15 +28,13 @@ public class CreateBinaryTree {
 		createBinaryTree.createBinaryTree(nums);
 
 	}
+}
+class TreeNode {
+	int val;
+	TreeNode left, right;
 
-	public static class TreeNode {
-		int val;
-		TreeNode left, right;
-
-		public TreeNode(int val) {
-			this.val = val;
-		}
+	public TreeNode(int val) {
+		this.val = val;
 	}
-
 }
 
