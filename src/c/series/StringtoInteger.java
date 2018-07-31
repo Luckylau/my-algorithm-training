@@ -1,11 +1,11 @@
 package c.series;
 
 /**
- * 
+ * 字符串转整数
  */
 public class StringtoInteger {
 	public int myAtoi(String str) {
-		if (str.length() == 0 || str == null) {
+		if (str == null || str.length() == 0) {
 			return 0;
 		}
 		boolean postive = true;
@@ -19,7 +19,6 @@ public class StringtoInteger {
 			}
 		}
 		if (str.charAt(start) == '-') {
-			System.out.println("==============");
 			postive = false;
 			start++;
 		} else if (str.charAt(start) == '+') {
@@ -62,7 +61,7 @@ public class StringtoInteger {
 	}
 
 	public static void main(String[] args) {
-		String s = "9223372036854775809";
+		String s = "-91283472332";
 		StringtoInteger stringtoInteger = new StringtoInteger();
 		System.out.println(stringtoInteger.myAtoi(s));
 
