@@ -1,17 +1,15 @@
 # My-algorithm-training
 ### **Q系列** 
 
-From CtCI-6th-Edition-Python
-
 From CtCI-6th-Edition-Java
 
 ### **N系列**
 
-From Nine Chapter
+From Nine-Chapter
 
 ### **C系列**
 
-Collect interesting algorithms
+Collect-Interesting-Algorithms
 
 ### **可视化算法**
 
