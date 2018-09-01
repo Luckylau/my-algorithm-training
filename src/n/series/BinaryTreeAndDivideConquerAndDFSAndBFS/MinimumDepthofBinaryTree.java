@@ -10,7 +10,7 @@ package n.series.BinaryTreeAndDivideConquerAndDFSAndBFS;
  *   2   3
  *  / \
  * 4   5
- * The maximum depth is 3.
+ * The maximum depth is 2.
  *
  *
  */
