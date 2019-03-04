@@ -4,7 +4,7 @@ package c.series;
  */
 public class FindLongparlindrome {
 	public String findLongparlindrome(String str) {
-		if (str.length() == 0 || str == null) {
+		if ( str == null || str.length() == 0) {
 			return str;
 		}
 		String target = "";
