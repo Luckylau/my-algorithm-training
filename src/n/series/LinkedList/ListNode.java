@@ -1,6 +1,7 @@
 package n.series.LinkedList;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ListNode {
     int val;
@@ -11,14 +12,13 @@ public class ListNode {
         this.next = null;
     }
 
-    public static ArrayList<Integer> printListfromHeadtoTail(ListNode head) {
-        ArrayList<Integer> res = new ArrayList<Integer>();
+    public static List<Integer> printListfromHeadtoTail(ListNode head) {
+        List<Integer> res = new ArrayList<Integer>();
         if (head == null) {
             return res;
         }
-        res.add(head.val);
-        while (head.next != null) {
-            res.add(head.next.val);
+        while (head != null) {
+            res.add(head.val);
             head = head.next;
         }
         return res;
