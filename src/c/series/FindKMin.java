@@ -8,6 +8,16 @@ import java.util.Arrays;
  */
 public class FindKMin {
 
+	public static void main(String[] args) {
+		int[] nums = new int[]{13, 6, 8, 9, 2, 2,};
+		FindKMin findKMin = new FindKMin();
+		System.out.println(Arrays.toString(findKMin.findKmin(nums, 4)));
+		int[] nums2 = new int[]{13, 6, 8, 9, 2, 2,};
+		System.out.println(Arrays.toString(findKMin.findKmin2(nums2, 4)));
+		int[] nums3 = new int[]{13, 6, 8, 9, 2, 2,};
+		System.out.println(Arrays.toString(findKMin.findKmin3(nums2, 4)));
+	}
+
 	public int[] findKmin(int[] nums, int k) {
 		int[] res = new int[k];
 		if (nums == null || nums.length == 0) {
@@ -90,12 +100,26 @@ public class FindKMin {
 		nums[index] = tmp;
 	}
 
-	public static void main(String[] args) {
-		int[] nums = new int[] { 13, 6, 8, 9, 2, 2, };
-		FindKMin findKMin = new FindKMin();
-		System.out.println(Arrays.toString(findKMin.findKmin(nums, 4)));
-		int[] nums2 = new int[] { 13, 6, 8, 9, 2, 2,};
-		System.out.println(Arrays.toString(findKMin.findKmin2(nums2, 4)));
+	public int[] findKmin3(int[] nums, int k) {
+		int[] res = new int[k];
+		if (nums == null || nums.length == 0) {
+			return res;
+		}
+		int len = nums.length;
+		if (k >= len) {
+			return nums;
+		}
+		for (int i = 0; i < k; i++) {
+			for (int j = len - 1; j > i; j--) {
+				if (nums[i] > nums[j]) {
+					int tmp = nums[i];
+					nums[i] = nums[j];
+					nums[j] = tmp;
+				}
+			}
+			res[i] = nums[i];
+		}
+		return res;
 	}
 
 }
