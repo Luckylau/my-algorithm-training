@@ -21,7 +21,7 @@ public class Searcha2DMatrixII {
         System.out.println(searcha2DMatrixII.find(nums, 7));
     }
 
-    public boolean find(int[][] nums, int target) {
+    private boolean find(int[][] nums, int target) {
         if (nums == null || nums.length == 0) {
             return false;
         }
