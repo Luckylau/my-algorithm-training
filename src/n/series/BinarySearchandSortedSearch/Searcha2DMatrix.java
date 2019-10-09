@@ -19,7 +19,6 @@ package n.series.BinarySearchandSortedSearch;
 public class Searcha2DMatrix {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int[][] nums = new int[][]{
 				{1, 3, 5, 7},
 				{10, 11, 16, 20},
