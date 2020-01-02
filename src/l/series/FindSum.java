@@ -64,7 +64,7 @@ public class FindSum {
     }
 
     private int binarySearch(int[] nums, int target) {
-        if (nums.length == 0 || nums == null) {
+        if (nums == null || nums.length == 0) {
             return -1;
         }
         int start = 0;
