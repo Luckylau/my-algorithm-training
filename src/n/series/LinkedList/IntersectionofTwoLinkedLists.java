@@ -1,4 +1,5 @@
 package n.series.LinkedList;
+
 /**
  * Write a program to find the node at which the intersection of two singly linked lists begins.
  * Notice
@@ -7,14 +8,11 @@ package n.series.LinkedList;
  * You may assume there are no cycles anywhere in the entire linked structure.
  * Example
  * The following two linked lists:
- *   A:          a1 ->a2
- *
- *                        c1 ->c2 ->c3
- *
- *   B:     b1 ->b2 ->b3
- *
- *
- *
+ * A:          a1 ->a2
+ * <p>
+ * c1 ->c2 ->c3
+ * <p>
+ * B:     b1 ->b2 ->b3
  */
 public class IntersectionofTwoLinkedLists {
 

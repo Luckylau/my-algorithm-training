@@ -1,10 +1,12 @@
 package n.series.BinaryTreeAndDivideConquerAndDFSAndBFS;
 
+import util.TreeNode;
+
 /**
  * Given a binary search tree and a new tree node, insert the node into the tree.
  * You should keep the tree still be a valid binary search tree.
  * Example
- * Given binary search tree as follow, after Insert node 6, the tree should be:
+ * Given binary search tree as follow, after insert node 6, the tree should be:
  * 2             2
  * / \           / \
  * 1   4   -->   1   4
@@ -28,9 +30,9 @@ public class InsertaNodeinBinary {
         System.out.println(binaryTreeLevelOrderTraversal.levelOrder(insertaNodeinBinary.insertNode(root, node4)));
         TreeNode root2 = new TreeNode(2);
         TreeNode node11 = new TreeNode(1);
-        TreeNode node21= new TreeNode(4);
-        TreeNode node31= new TreeNode(3);
-        TreeNode node41= new TreeNode(6);
+        TreeNode node21 = new TreeNode(4);
+        TreeNode node31 = new TreeNode(3);
+        TreeNode node41 = new TreeNode(6);
         root2.left = node11;
         root2.right = node21;
         node21.left = node31;

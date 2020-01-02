@@ -1,17 +1,20 @@
 package n.series.BinaryTreeAndDivideConquerAndDFSAndBFS;
 
+import util.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
+
 /**
  * Given a binary tree, return the postorder traversal of its nodes' values.
  * Example
  * Given binary tree {1,#,2,3},
- *
+ * <p>
  * 1
- *  \
- *   2
- *   /
- *  3
+ * \
+ * 2
+ * /
+ * 3
  * return [3,2,1].
  */
 public class BinaryTreePostorderTraversal {

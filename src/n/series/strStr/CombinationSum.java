@@ -9,8 +9,6 @@
  * All numbers (including target) will be positive integers.
  * Elements in a combination (a1, a2, … , ak) must be in non-descending order. (ie, a1 ≤ a2 ≤ … ≤ ak).
  * The solution set must not contain duplicate combinations.
- * 
- * 
  */
 package n.series.strStr;
 
@@ -19,10 +17,17 @@ import java.util.Arrays;
 import java.util.List;
 
 public class CombinationSum {
+    public static void main(String[] args) {
+        int[] candidates = new int[]{2, 2, 3};
+        CombinationSum combinationSum = new CombinationSum();
+        System.out.println(combinationSum.combinationSum(candidates, 7));
+
+    }
+
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         // write your code here
-        List<List<Integer>>  result = new ArrayList<>();
-        if(candidates.length == 0 || candidates == null){
+        List<List<Integer>> result = new ArrayList<>();
+        if (candidates.length == 0 || candidates == null) {
             return result;
         }
         List<Integer> combination = new ArrayList<>();
@@ -30,8 +35,9 @@ public class CombinationSum {
         helper(candidates, 0, target, combination, result);
         return result;
     }
-    private void helper(int[] candidates,int index,int target,List<Integer> combination,
-        List<List<Integer>> result) {
+
+    private void helper(int[] candidates, int index, int target, List<Integer> combination,
+                        List<List<Integer>> result) {
         if (target == 0) {
             result.add(new ArrayList<Integer>(combination));
             return;
@@ -40,7 +46,7 @@ public class CombinationSum {
             if (candidates[i] > target) {
                 break;
             }
-            if( i !=index && candidates[i] == candidates[i - 1]){
+            if (i != index && candidates[i] == candidates[i - 1]) {
                 continue;
             }
             combination.add(candidates[i]);
@@ -48,12 +54,5 @@ public class CombinationSum {
             combination.remove(combination.size() - 1);
         }
     }
-
-	public static void main(String[] args) {
-		int[] candidates = new int[]{2,2,3};
-		CombinationSum combinationSum = new CombinationSum();
-		System.out.println(combinationSum.combinationSum(candidates, 7));
-
-	}
 
 }
