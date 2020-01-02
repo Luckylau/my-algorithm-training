@@ -69,27 +69,21 @@ public class FindSum {
         }
         int start = 0;
         int end = nums.length - 1;
-        while (start + 1 < end) {
+        while (start <= end) {
             int mid = start + (end - start) / 2;
             if (nums[mid] == target) {
                 return mid;
             } else if (nums[mid] > target) {
-                end = mid;
+                end = mid - 1;
             } else if (nums[mid] < target) {
-                start = mid;
+                start = mid + 1;
             }
-        }
-        if (nums[start] == target) {
-            return start;
-        }
-        if (nums[end] == target) {
-            return end;
         }
         return -1;
     }
 
     private void quickSort(int[] nums) {
-        if (nums.length == 0 || nums == null) {
+        if (nums == null || nums.length == 0) {
             return;
         }
         helper(nums, 0, nums.length - 1);
@@ -158,7 +152,7 @@ public class FindSum {
         int[] res = new int[2];
         res[0] = -1;
         res[1] = -1;
-        Map<Integer, Integer> hashmap = new HashMap<Integer, Integer>();
+        Map<Integer, Integer> hashmap = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             if (!hashmap.containsKey(target - nums[i])) {
                 hashmap.put(nums[i], i);
