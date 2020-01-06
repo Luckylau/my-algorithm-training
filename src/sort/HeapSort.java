@@ -7,8 +7,8 @@ public class HeapSort {
     public static void main(String[] args) {
         int[] nums = new int[]{13, 6, 8, 9, 2, 1,};
         System.out.println(Arrays.toString(nums));
-        HeapSort HeapSort = new HeapSort();
-        HeapSort.heapSort(nums);
+        HeapSort heapSort = new HeapSort();
+        heapSort.heapSort(nums);
         System.out.println(Arrays.toString(nums));
     }
 
@@ -18,17 +18,17 @@ public class HeapSort {
         }
         int len = nums.length;
         for (int i = len / 2; i >= 0; i--) {
-            HeapAdjust(nums, i, len);
+            heapAdjust(nums, i, len);
         }
         for (int i = len - 1; i >= 1; i--) {
             int tmp = nums[0];
             nums[0] = nums[i];
             nums[i] = tmp;
-            HeapAdjust(nums, 0, i - 1);
+            heapAdjust(nums, 0, i - 1);
         }
     }
 
-    private void HeapAdjust(int[] nums, int index, int length) {
+    private void heapAdjust(int[] nums, int index, int length) {
         int tmp = nums[index];
         for (int i = 2 * index + 1; i < length - 1; i = 2 * i + 1) {
             if (nums[i] < nums[i + 1]) {
