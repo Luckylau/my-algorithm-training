@@ -42,7 +42,7 @@ public class Permutations {
             result.add(new ArrayList<Integer>(sub));
         }
         for (int i = 0; i < nums.length; i++) {
-            if (visited[i] == true) {
+            if (visited[i]) {
                 continue;
             }
             visited[i] = true;
