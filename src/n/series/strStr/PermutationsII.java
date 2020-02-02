@@ -27,7 +27,7 @@ public class PermutationsII {
         // Write your code here
         List<List<Integer>> result = new ArrayList<List<Integer>>();
         if (nums.length == 0) {
-            result.add(new ArrayList<Integer>());
+            result.add(new ArrayList<>());
             return result;
         }
         Arrays.sort(nums);
@@ -39,10 +39,10 @@ public class PermutationsII {
 
     private void Helper(int[] nums, boolean[] visited, List<Integer> sub, List<List<Integer>> result) {
         if (nums.length == sub.size()) {
-            result.add(new ArrayList<Integer>(sub));
+            result.add(new ArrayList<>(sub));
         }
         for (int i = 0; i < nums.length; i++) {
-            if (visited[i] == true || (i != 0 && nums[i] == nums[i - 1] && visited[i - 1] == false)) {
+            if (visited[i] || (i != 0 && nums[i] == nums[i - 1] && !visited[i - 1])) {
                 continue;
             }
             visited[i] = true;
