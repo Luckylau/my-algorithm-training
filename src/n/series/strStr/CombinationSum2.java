@@ -23,7 +23,7 @@ public class CombinationSum2 {
 
     public List<List<Integer>> combinationSum2(int[] num, int target) {
         List<List<Integer>> results = new ArrayList<>();
-        if (num.length == 0 || num == null) {
+        if (num == null || num.length == 0) {
             return results;
         }
         Arrays.sort(num);

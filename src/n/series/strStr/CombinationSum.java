@@ -27,7 +27,7 @@ public class CombinationSum {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         // write your code here
         List<List<Integer>> result = new ArrayList<>();
-        if (candidates.length == 0 || candidates == null) {
+        if (candidates == null || candidates.length == 0) {
             return result;
         }
         List<Integer> combination = new ArrayList<>();
