@@ -12,7 +12,7 @@ public class NumSquares {
     public static void main(String[] args) {
         NumSquares numSquares = new NumSquares();
         System.out.println(numSquares.numSquares(12));
-        System.out.println(numSquares.numSquares(12));
+        System.out.println(numSquares.numSquares2(12));
     }
 
     public int numSquares(int n) {
