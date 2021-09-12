@@ -1,4 +1,4 @@
-package m.series.str;
+package m.series;
 
 /**
  * 合并两个有序链表

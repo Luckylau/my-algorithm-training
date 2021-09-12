@@ -1,4 +1,4 @@
-package m.series.str;
+package m.series;
 
 /**
  * x 的平方根

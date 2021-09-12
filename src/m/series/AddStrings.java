@@ -1,4 +1,4 @@
-package m.series.str;
+package m.series;
 
 /**
  * 字符串相加

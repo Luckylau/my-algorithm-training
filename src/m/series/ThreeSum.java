@@ -1,4 +1,4 @@
-package m.series.str;
+package m.series;
 
 import java.util.ArrayList;
 import java.util.Arrays;
