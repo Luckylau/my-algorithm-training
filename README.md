@@ -1,7 +1,4 @@
 # My-algorithm-training
-### **Q系列** 
-
-From CtCI-6th-Edition-Java
 
 ### **N系列**
 
