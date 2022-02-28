@@ -1,12 +1,11 @@
 package l.series;
 
 /**
- * ����һ���������飬�жϸ������ǲ���ĳ��Ԫ�������ĺ�������Ľ����5��7��6��9��11��10��8
- * ����һ���������飬�жϸ������ǲ���ĳ��Ԫ��������ǰ������Ľ����8��6��5��7��10��9��11
+ * 判断整数序列是不是二元查找树的后序遍历结果
+ * 判断整数序列是不是二元查找树的前序遍历结果
  */
 public class IsBinTreeTraverse {
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
         int[] nums = new int[]{5, 7, 6, 9, 11, 10, 8};
         int[] nums2 = new int[]{8, 6, 5, 7, 10, 9, 11};
         IsBinTreeTraverse isBinTreeTraverse = new IsBinTreeTraverse();
@@ -16,7 +15,7 @@ public class IsBinTreeTraverse {
     }
 
     /**
-     * �жϸ������ǲ���ĳ��Ԫ�������ĺ�������Ľ��
+     * 后序遍历
      *
      * @param nums
      * @return
@@ -47,13 +46,12 @@ public class IsBinTreeTraverse {
     }
 
     /**
-     * �жϸ������ǲ���ĳ��Ԫ��������ǰ������Ľ��
-     *
+     * 前序遍历
      * @param nums
      * @return
      */
     public boolean isBinTreePreTraverse(int[] nums) {
-        if (nums.length == 0 || nums == null) {
+        if (nums == null || nums.length == 0) {
             return false;
         }
         return helper2(nums, 0, nums.length - 1);
