@@ -1,7 +1,7 @@
 package m.series;
 
 /**
- * 反转链表
+ * 206.反转链表
  *
  * @Author luckylau
  * @Date 2021/4/12
@@ -13,9 +13,8 @@ public class ReverseList {
         }
         ListNode pre = null;
         ListNode current = head;
-        ListNode next = null;
         while (current != null) {
-            next = current.next;
+            ListNode next = current.next;
             current.next = pre;
             pre = current;
             current = next;
@@ -24,6 +23,11 @@ public class ReverseList {
     }
 
     private static class ListNode {
+        int val;
         ListNode next;
+
+        public ListNode(int val) {
+            this.val = val;
+        }
     }
 }
