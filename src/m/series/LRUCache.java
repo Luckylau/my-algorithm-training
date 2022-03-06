@@ -4,16 +4,17 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 146.LRU(最近最少使用)缓存机制
+ *
  * @Author luckylau
  * @Date 2021/4/12
- * LRU(最近最少使用)缓存机制
  */
 public class LRUCache {
     private int count = 0;
-    private Map<Integer, Node> cache = new HashMap<>();
-    private Node head;
-    private Node tail;
-    private int capacity;
+    private final Map<Integer, Node> cache = new HashMap<>();
+    private final Node head;
+    private final Node tail;
+    private final int capacity;
 
     public LRUCache(int capacity) {
         this.capacity = capacity;
