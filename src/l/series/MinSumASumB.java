@@ -3,7 +3,7 @@ package l.series;
 import java.util.Arrays;
 
 /**
- * ����������������a��b������a,b�е�Ԫ�أ�ʹ��[����aԪ�صĺ�]��[����bԪ�صĺ�]֮��Ĳ���С��
+ * 通过交换a,b中的元素，使[序列a元素的和]与[序列b元素的和]之间的差最小(两数组的差最小)
  */
 public class MinSumASumB {
     public static void main(String[] args) {

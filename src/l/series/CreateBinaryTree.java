@@ -12,7 +12,7 @@ public class CreateBinaryTree {
     }
 
     public TreeNode createBinaryTree(int[] nums) {
-        if (nums.length == 0 || nums == null) {
+        if (nums == null || nums.length == 0) {
             return null;
         }
         return helper(nums, 0, nums.length - 1);
