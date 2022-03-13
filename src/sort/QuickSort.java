@@ -1,7 +1,10 @@
 package sort;
 
 import java.util.Arrays;
-
+/**
+ * @Author luckylau
+ * @Date 2022/3/13
+ */
 public class QuickSort {
 
     public static void main(String[] args) {
@@ -24,14 +27,13 @@ public class QuickSort {
 
     private void helper(int[] nums, int low, int high) {
         if (low < high) {
-            int pivot = Partition(nums, low, high);
+            int pivot = partition(nums, low, high);
             helper(nums, 0, pivot - 1);
             helper(nums, pivot + 1, high);
-
         }
     }
 
-    private int Partition(int[] nums, int low, int high) {
+    private int partition(int[] nums, int low, int high) {
         int tmp = nums[low];
         while (low < high) {
             while (low < high && nums[high] >= tmp) {
