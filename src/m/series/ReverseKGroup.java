@@ -1,6 +1,8 @@
 package m.series;
 
 /**
+ * 25. K 个一组翻转链表
+ *
  * @Author luckylau
  * @Date 2021/4/12
  */
