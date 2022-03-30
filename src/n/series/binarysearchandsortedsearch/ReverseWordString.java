@@ -1,6 +1,8 @@
-package n.series.BinarySearchandSortedSearch;
+package n.series.binarysearchandsortedsearch;
 
 /**
+ * @Author luckylau
+ * @Date 2022/3/30
  * Given an input string, reverse the string word by word.
  * For example,
  * Given s = "the sky is blue",
@@ -13,17 +15,17 @@ package n.series.BinarySearchandSortedSearch;
  * How about multiple spaces between two words?
  * Reduce them to a single space in the reversed string.
  */
-public class ReverseWordsinaString {
+public class ReverseWordString {
 
     public static void main(String[] args) {
         String s = "a good man is me";
         System.out.println(s);
-        ReverseWordsinaString reverseWordsinaString = new ReverseWordsinaString();
-        System.out.println(reverseWordsinaString.reverseWords(s));
+        ReverseWordString reverseWordString = new ReverseWordString();
+        System.out.println(reverseWordString.reverseWords(s));
     }
 
     public String reverseWords(String s) {
-        if (s == null || s.length() == 0 || s.indexOf(" ") == -1) {
+        if (s == null || s.length() == 0) {
             return s;
         }
 

@@ -1,8 +1,10 @@
-package n.series.BinarySearchandSortedSearch;
+package n.series.binarysearchandsortedsearch;
 
 import java.util.Arrays;
 
 /**
+ * @Author luckylau
+ * @Date 2022/3/30
  * Given two sorted integer arrays A and B, merge B into A as one sorted array.
  * Notice
  * You may assume that A has enough space (size that is greater or equal to m + n) to hold additional elements from B.

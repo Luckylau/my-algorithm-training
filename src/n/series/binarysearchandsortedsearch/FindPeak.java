@@ -1,4 +1,6 @@
 /**
+ *  @Author luckylau
+ *  @Date 2022/3/30
  * 查找峰值
  * There is an integer array which has the following features:
  * The numbers in adjacent positions are different.
@@ -10,14 +12,14 @@
  * Return index 1 (which is number 2) or 6 (which is number 7)
  * Time complexity O(logN)
  */
-package n.series.BinarySearchandSortedSearch;
+package n.series.binarysearchandsortedsearch;
 
-public class FindaPeak {
+public class FindPeak {
 
     public static void main(String[] args) {
         int[] nums = new int[]{1, 3, 2, 4, 5, 6, 7, 9, 8, 10, 12, 11};
-        FindaPeak findaPeak = new FindaPeak();
-        System.out.println(findaPeak.findPeak(nums));
+        FindPeak findPeak = new FindPeak();
+        System.out.println(findPeak.findPeak(nums));
 
     }
 

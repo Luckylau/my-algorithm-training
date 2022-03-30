@@ -1,8 +1,10 @@
-package n.series.BinarySearchandSortedSearch;
+package n.series.binarysearchandsortedsearch;
 
 import java.util.Arrays;
 
 /**
+ * @Author luckylau
+ * @Date 2022/3/30
  * Given a string and an offset, rotate string by offset. (rotate from left to right)
  * Example
  * Given "abcdefg".

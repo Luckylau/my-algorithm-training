@@ -1,4 +1,6 @@
 /**
+ * @Author luckylau
+ * @Date 2022/3/30
  * Follow up for "Remove Duplicates":
  * What if duplicates are allowed at most twice?
  * For example,
@@ -6,16 +8,16 @@
  * Your function should return length = 5, and A is now [1,1,2,2,3]
  */
 
-package n.series.BinarySearchandSortedSearch;
+package n.series.binarysearchandsortedsearch;
 
-public class RemovDuplicatesfromSortedArray2 {
+public class RemoveDuplicatesFromSortedArray2 {
 
     public static void main(String[] args) {
         int[] nums = new int[]{1, 1, 1, 2, 2, 3};
-        RemovDuplicatesfromSortedArray2 removDuplicatesfromSortedArray2 = new RemovDuplicatesfromSortedArray2();
-        System.out.println(removDuplicatesfromSortedArray2.removeDuplicates(nums));
+        RemoveDuplicatesFromSortedArray2 removeDuplicatesfromSortedArray2 = new RemoveDuplicatesFromSortedArray2();
+        System.out.println(removeDuplicatesfromSortedArray2.removeDuplicates(nums));
         int[] nums2 = new int[]{1, 1, 1, 2, 2, 3};
-        System.out.println(removDuplicatesfromSortedArray2.removeDuplicates2(nums2));
+        System.out.println(removeDuplicatesfromSortedArray2.removeDuplicates2(nums2));
     }
 
     public int removeDuplicates(int[] nums) {

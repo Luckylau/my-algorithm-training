@@ -1,6 +1,8 @@
-package n.series.BinarySearchandSortedSearch;
+package n.series.binarysearchandsortedsearch;
 
 /**
+ * @Author luckylau
+ * @Date 2022/3/30
  * Write an efficient algorithm that searches for a value in an m x n matrix, return the occurrence of it.
  * <p>
  * This matrix has the following properties:

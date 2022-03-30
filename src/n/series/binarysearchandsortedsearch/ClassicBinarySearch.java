@@ -1,16 +1,19 @@
+
+package n.series.binarysearchandsortedsearch;
+
 /**
+ * @Author luckylau
+ * @Date 2022/3/30
  * Classical Binary Search
  * <p>
  * Given an sorted integer array - nums, and an integer - target. Find the first position of
  * target in nums, return -1 if target does not exist.
  */
-package n.series.BinarySearchandSortedSearch;
-
-public class ClassicBinarysearch {
+public class ClassicBinarySearch {
 
     public static void main(String[] args) {
         int[] nums = {-1, 0, 3, 5, 9, 12};
-        ClassicBinarysearch classicBinarysearch = new ClassicBinarysearch();
+        ClassicBinarySearch classicBinarysearch = new ClassicBinarySearch();
         System.out.println(" the first position of target is " + classicBinarysearch.binarySearch(nums, 3));
         System.out.println(" the first position of target is " + classicBinarysearch.binarySearch2(nums, 3));
 

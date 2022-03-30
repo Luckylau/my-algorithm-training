@@ -1,4 +1,4 @@
-package n.series.BinarySearchandSortedSearch;
+package n.series.binarysearchandsortedsearch;
 
 import java.util.Arrays;
 

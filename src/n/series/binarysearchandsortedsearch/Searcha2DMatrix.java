@@ -1,4 +1,8 @@
+package n.series.binarysearchandsortedsearch;
+
 /**
+ *  @Author luckylau
+ *  @Date 2022/3/30
  * Write an efficient algorithm that searches for a value in an m x n matrix.
  * This matrix has the following properties:
  * Integers in each row are sorted from left to right.
@@ -14,8 +18,6 @@
  * Challenge
  * O(log(n) + log(m)) time
  */
-package n.series.BinarySearchandSortedSearch;
-
 public class Searcha2DMatrix {
 
     public static void main(String[] args) {

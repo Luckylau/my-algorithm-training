@@ -1,8 +1,10 @@
-package n.series.BinarySearchandSortedSearch;
+package n.series.binarysearchandsortedsearch;
 
 import java.util.Arrays;
 
 /**
+ * @Author luckylau
+ * @Date 2022/3/30
  * Search for a Range
  * Given a sorted array of n integers, find the starting and ending position of a given target value.
  * If the target is not found in the array, return [-1, -1].
@@ -10,12 +12,12 @@ import java.util.Arrays;
  * Given [5, 7, 7, 8, 8, 10] and target value 8,
  * return [3, 4].
  */
-public class SearchforaRange {
+public class SearchForRange {
 
     public static void main(String[] args) {
         int[] nums = new int[]{2, 2, 4, 4};
-        SearchforaRange searchforaRange = new SearchforaRange();
-        System.out.println(Arrays.toString(searchforaRange.searchRange(nums, 2)));
+        SearchForRange searchForRange = new SearchForRange();
+        System.out.println(Arrays.toString(searchForRange.searchRange(nums, 2)));
     }
 
     public int[] searchRange(int[] A, int target) {

@@ -1,8 +1,10 @@
-package n.series.BinarySearchandSortedSearch;
+package n.series.binarysearchandsortedsearch;
 
 import java.util.Arrays;
 
 /**
+ * @Author luckylau
+ * @Date 2022/3/30
  * Merge two given sorted integer array A and B into a new sorted integer array.
  * Example
  * A=[1,2,3,4]

@@ -1,9 +1,11 @@
-package n.series.BinarySearchandSortedSearch;
+package n.series.binarysearchandsortedsearch;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
+ * @Author luckylau
+ * @Date 2022/3/30
  * Given a rotated sorted array, recover it to sorted array in-place.
  * Clarification
  * What is rotated array?

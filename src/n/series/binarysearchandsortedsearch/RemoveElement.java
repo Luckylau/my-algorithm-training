@@ -1,8 +1,10 @@
-package n.series.BinarySearchandSortedSearch;
+package n.series.binarysearchandsortedsearch;
 
 import java.util.Arrays;
 
 /**
+ * @Author luckylau
+ * @Date 2022/3/30
  * Given an array and a value, remove all occurrences of that value in place and return the new length.
  * The order of elements can be changed, and the elements after the new length don't matter.
  * Example
