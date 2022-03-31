@@ -1,8 +1,10 @@
-package n.series.BinaryTreeAndDivideConquerAndDFSAndBFS;
+package n.series.binarytreeanddivideconqueranddfsandbfs;
 
 import util.TreeNode;
 
 /**
+ * @Author luckylau
+ * @Date 2022/3/31
  * Given a binary search tree and a new tree node, insert the node into the tree.
  * You should keep the tree still be a valid binary search tree.
  * Example

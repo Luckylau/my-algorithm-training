@@ -1,4 +1,4 @@
-package n.series.BinaryTreeAndDivideConquerAndDFSAndBFS;
+package n.series.binarytreeanddivideconqueranddfsandbfs;
 
 import util.TreeNode;
 
@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * @Author luckylau
+ * @Date 2022/3/31
  * Given a binary tree, return the postorder traversal of its nodes' values.
  * Example
  * Given binary tree {1,#,2,3},

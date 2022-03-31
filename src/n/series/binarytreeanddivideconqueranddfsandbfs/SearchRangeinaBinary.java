@@ -1,13 +1,16 @@
-/**
- * Given two values k1 and k2 (where k1 < k2) and a root pointer to a Binary Search Tree.
- * Find all the keys of tree in range k1 to k2. i.e. print all x such that k1<=x<=k2 and x is a key of given BST. Return all the keys in ascending order.
- */
-package n.series.BinaryTreeAndDivideConquerAndDFSAndBFS;
+
+package n.series.binarytreeanddivideconqueranddfsandbfs;
 
 import util.TreeNode;
 
 import java.util.ArrayList;
 
+/**
+ * @Author luckylau
+ * @Date 2022/3/31
+ * Given two values k1 and k2 (where k1 < k2) and a root pointer to a Binary Search Tree.
+ * Find all the keys of tree in range k1 to k2. i.e. print all x such that k1<=x<=k2 and x is a key of given BST. Return all the keys in ascending order.
+ */
 public class SearchRangeinaBinary {
 
     private ArrayList<Integer> result;

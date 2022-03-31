@@ -1,8 +1,10 @@
-package n.series.BinaryTreeAndDivideConquerAndDFSAndBFS;
+package n.series.binarytreeanddivideconqueranddfsandbfs;
 
 import util.TreeNode;
 
 /**
+ * @Author luckylau
+ * @Date 2022/3/31
  * Given a binary tree, find its maximum depth.
  * The maximum depth is the number of nodes along the
  * longest path from the root node down to the farthest leaf node.

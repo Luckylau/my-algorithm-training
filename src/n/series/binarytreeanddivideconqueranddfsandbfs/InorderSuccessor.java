@@ -1,13 +1,16 @@
-/**
- * Given a binary search tree and a node in it, find the in-order successor of that node in the BST.
- * Note: If the given node has no in-order successor in the tree, return null.
- */
-package n.series.BinaryTreeAndDivideConquerAndDFSAndBFS;
+
+package n.series.binarytreeanddivideconqueranddfsandbfs;
 
 import util.TreeNode;
 
 import java.util.Stack;
 
+/**
+ * @Author luckylau
+ * @Date 2022/3/31
+ * Given a binary search tree and a node in it, find the in-order successor of that node in the BST.
+ * Note: If the given node has no in-order successor in the tree, return null.
+ */
 public class InorderSuccessor {
 
     public static void main(String[] args) {

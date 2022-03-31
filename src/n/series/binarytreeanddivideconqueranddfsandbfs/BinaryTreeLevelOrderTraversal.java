@@ -1,4 +1,14 @@
+package n.series.binarytreeanddivideconqueranddfsandbfs;
+
+import util.TreeNode;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
+ * @Author luckylau
+ * @Date 2022/3/31
  * Given a binary tree, return the level order traversal of its nodes' values.
  * (ie, from left to right, level by level)
  * Example
@@ -21,14 +31,6 @@
  * [15,7]
  * ]
  */
-package n.series.BinaryTreeAndDivideConquerAndDFSAndBFS;
-
-import util.TreeNode;
-
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
-
 public class BinaryTreeLevelOrderTraversal {
 
     public static void main(String[] args) {

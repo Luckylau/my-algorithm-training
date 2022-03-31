@@ -1,4 +1,14 @@
+package n.series.binarytreeanddivideconqueranddfsandbfs;
+
+import util.TreeNode;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
+
 /**
+ * @Author luckylau
+ * @Date 2022/3/31
  * Given a binary tree, return the inorder traversal of its nodes' values.
  * Example
  * Given binary tree {1,#,2,3},
@@ -10,14 +20,6 @@
  * 3
  * return [1,3,2].
  */
-package n.series.BinaryTreeAndDivideConquerAndDFSAndBFS;
-
-import util.TreeNode;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
-
 public class BinaryTreeInorderTraversal {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);

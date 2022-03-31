@@ -13,7 +13,7 @@
  * \   / \
  * 9 3   5
  */
-package n.series.BinaryTreeAndDivideConquerAndDFSAndBFS;
+package n.series.binarytreeanddivideconqueranddfsandbfs;
 
 import util.TreeNode;
 

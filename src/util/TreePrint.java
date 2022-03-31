@@ -1,6 +1,6 @@
 package util;
 
-import n.series.BinaryTreeAndDivideConquerAndDFSAndBFS.BinaryTreeLevelOrderTraversal;
+import n.series.binarytreeanddivideconqueranddfsandbfs.BinaryTreeLevelOrderTraversal;
 
 import java.util.ArrayList;
 

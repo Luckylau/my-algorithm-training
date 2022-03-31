@@ -1,4 +1,10 @@
+package n.series.binarytreeanddivideconqueranddfsandbfs;
+
+import util.TreeNode;
+
 /**
+ * @Author luckylau
+ * @Date 2022/3/31
  * Given a binary tree, find the maximum path sum.
  * The path may start and end at any node in the tree.
  * Example
@@ -8,10 +14,6 @@
  * 2   3
  * return 6.
  */
-package n.series.BinaryTreeAndDivideConquerAndDFSAndBFS;
-
-import util.TreeNode;
-
 public class BinaryTreeMaximumPathSum {
 
     public static void main(String[] args) {

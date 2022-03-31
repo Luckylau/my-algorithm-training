@@ -1,4 +1,13 @@
+package n.series.binarytreeanddivideconqueranddfsandbfs;
+
+import util.TreeNode;
+
+import java.util.ArrayList;
+import java.util.Stack;
+
 /**
+ * @Author luckylau
+ * @Date 2022/3/31
  * Given a binary tree, return the zigzag level order traversal of its nodes' values.
  * (ie, from left to right, then right to left for the next level and alternate between).
  * Example
@@ -15,13 +24,6 @@
  * [15,7]
  * ]
  */
-package n.series.BinaryTreeAndDivideConquerAndDFSAndBFS;
-
-import util.TreeNode;
-
-import java.util.ArrayList;
-import java.util.Stack;
-
 public class BinaryTreeZigzagLevel {
 
     public ArrayList<ArrayList<Integer>> zigzagLevelOrder(TreeNode root) {

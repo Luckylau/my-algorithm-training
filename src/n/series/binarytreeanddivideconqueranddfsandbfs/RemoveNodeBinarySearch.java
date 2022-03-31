@@ -1,8 +1,12 @@
-package n.series.BinaryTreeAndDivideConquerAndDFSAndBFS;
+package n.series.binarytreeanddivideconqueranddfsandbfs;
 
 import util.TreeNode;
 
-public class RemoveNodeinBinarySearch {
+/**
+ * @Author luckylau
+ * @Date 2022/3/31
+ */
+public class RemoveNodeBinarySearch {
 
     public static void main(String[] args) {
         TreeNode root = new TreeNode(2);
@@ -16,8 +20,8 @@ public class RemoveNodeinBinarySearch {
         node2.right = node4;
         BinaryTreeLevelOrderTraversal binaryTreeLevelOrderTraversal = new BinaryTreeLevelOrderTraversal();
         System.out.println(binaryTreeLevelOrderTraversal.levelOrder2(root).toString());
-        RemoveNodeinBinarySearch removeNodeinBinarySearch = new RemoveNodeinBinarySearch();
-        removeNodeinBinarySearch.removeNode(root, 4);
+        RemoveNodeBinarySearch removeNodeBinarySearch = new RemoveNodeBinarySearch();
+        removeNodeBinarySearch.removeNode(root, 4);
         System.out.println(binaryTreeLevelOrderTraversal.levelOrder2(root).toString());
 
     }
