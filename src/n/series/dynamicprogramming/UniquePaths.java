@@ -1,4 +1,8 @@
+package n.series.dynamicprogramming;
+
 /**
+ * @Author luckylau
+ * @Date 2022/3/31
  * A robot is located at the top-left corner of a m x n grid.
  * The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid.
  * How many possible unique paths are there?
@@ -6,8 +10,6 @@
  * Given m = 3 and n = 3, return 6.
  * Given m = 4 and n = 5, return 35.
  */
-package n.series.DynamicProgramming;
-
 public class UniquePaths {
     public static void main(String[] args) {
         int m = 4;

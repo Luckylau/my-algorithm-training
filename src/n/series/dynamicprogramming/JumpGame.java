@@ -1,4 +1,8 @@
+package n.series.dynamicprogramming;
+
 /**
+ * @Author luckylau
+ * @Date 2022/3/31
  * Given an array of non-negative integers, you are initially positioned at the first index of the array.
  * Each element in the array represents your maximum jump length at that position.
  * Determine if you are able to reach the last index.
@@ -10,8 +14,6 @@
  * This is just to let you learn how to use this problem in dynamic programming ways.
  * If you finish it in dynamic programming ways, you can try greedy method to make it accept again.
  */
-package n.series.DynamicProgramming;
-
 public class JumpGame {
     public static void main(String[] args) {
         int[] a = new int[]{2, 2, 0, 1, 4};
@@ -24,7 +26,7 @@ public class JumpGame {
 
     //Time Limit Exceeded
     public boolean canJumpb(int[] A) {
-        // wirte your code here
+        // write your code here
         boolean[] can = new boolean[A.length];
         can[0] = true;
         for (int i = 1; i < A.length; i++) {

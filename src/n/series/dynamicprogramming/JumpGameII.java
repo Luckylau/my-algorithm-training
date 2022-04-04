@@ -1,4 +1,8 @@
+package n.series.dynamicprogramming;
+
 /**
+ * @Author luckylau
+ * @Date 2022/3/31
  * Given an array of non-negative integers, you are initially positioned at the first index of the array.
  * Each element in the array represents your maximum jump length at that position.
  * Your goal is to reach the last index in the minimum number of jumps.
@@ -8,8 +12,6 @@
  * The minimum number of jumps to reach the last index is 2.
  * (Jump 1 step from index 0 to 1, then 3 steps to the last index.)
  */
-package n.series.DynamicProgramming;
-
 public class JumpGameII {
     public static void main(String[] args) {
         int[] a = new int[]{3, 2, 1, 0, 4};
@@ -44,7 +46,7 @@ public class JumpGameII {
         if (A == null || A.length == 0) {
             return -1;
         }
-        if (!checkOnreachable(A)) {
+        if (!checkOnReachable(A)) {
             return -1;
         }
         int start = 0, end = 0, jumps = 0;
@@ -62,7 +64,7 @@ public class JumpGameII {
         return jumps;
     }
 
-    private boolean checkOnreachable(int[] A) {
+    private boolean checkOnReachable(int[] A) {
         int farthest = A[0];
         for (int i = 1; i < A.length; i++) {
             if (farthest >= i && farthest < i + A[i]) {

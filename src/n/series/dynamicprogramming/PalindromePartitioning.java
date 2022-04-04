@@ -1,4 +1,11 @@
+package n.series.dynamicprogramming;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /**
+ * @Author luckylau
+ * @Date 2022/3/31
  * Given a string s, partition s such that every substring of the partition is a palindrome.
  * Return all possible palindrome partitioning of s.
  * Example
@@ -8,11 +15,6 @@
  * ["a","a","b"]
  * ]
  */
-package n.series.DynamicProgramming;
-
-import java.util.ArrayList;
-import java.util.List;
-
 public class PalindromePartitioning {
 
     public static void main(String[] args) {
@@ -39,7 +41,7 @@ public class PalindromePartitioning {
         }
         for (int i = startIndex; i < s.length(); i++) {
             String sub = s.substring(startIndex, i + 1);
-            if (!checkIspalindrome(sub)) {
+            if (!checkIsPalindrome(sub)) {
                 continue;
             }
             partitions.add(sub);
@@ -48,7 +50,7 @@ public class PalindromePartitioning {
         }
     }
 
-    private boolean checkIspalindrome(String sub) {
+    private boolean checkIsPalindrome(String sub) {
         for (int i = 0, j = sub.length() - 1; i < j; i++, j--) {
             if (sub.charAt(i) != sub.charAt(j)) {
                 return false;

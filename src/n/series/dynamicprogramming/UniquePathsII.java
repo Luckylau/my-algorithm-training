@@ -1,4 +1,8 @@
+package n.series.dynamicprogramming;
+
 /**
+ * @Author luckylau
+ * @Date 2022/3/31
  * Follow up for "Unique Paths":
  * Now consider if some obstacles are added to the grids. How many unique paths would there be?
  * An obstacle and empty space is marked as 1 and 0 respectively in the grid.
@@ -12,8 +16,6 @@
  * ]
  * The total number of unique paths is 2.
  */
-package n.series.DynamicProgramming;
-
 public class UniquePathsII {
     public static void main(String[] args) {
         int[][] obstacleGrid = new int[4][5];
@@ -24,7 +26,7 @@ public class UniquePathsII {
 
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
         // write your code here
-        if (obstacleGrid.length == 0 || obstacleGrid == null || obstacleGrid[0].length == 0) {
+        if (obstacleGrid == null || obstacleGrid.length == 0 || obstacleGrid[0].length == 0) {
             return 0;
         }
         int m = obstacleGrid.length;

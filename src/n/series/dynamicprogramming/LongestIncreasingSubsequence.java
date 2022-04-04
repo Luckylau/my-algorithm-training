@@ -1,12 +1,14 @@
+package n.series.dynamicprogramming;
+
 /**
+ * @Author luckylau
+ * @Date 2022/3/31
  * Given a sequence of integers, find the longest increasing subsequence (LIS).
  * You code should return the length of the LIS.
  * Example
  * For [5, 4, 1, 2, 3], the LIS is [1, 2, 3], return 3
  * For [4, 2, 4, 5, 3, 7], the LIS is [2, 4, 5, 7], return 4
  */
-package n.series.DynamicProgramming;
-
 public class LongestIncreasingSubsequence {
     public static void main(String[] args) {
         int[] nums = {1, 2, 3, 7, 10, 6, 5, 4, 3, 2, 1};

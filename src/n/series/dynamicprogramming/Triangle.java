@@ -1,4 +1,8 @@
+package n.series.dynamicprogramming;
+
 /**
+ * @Author luckylau
+ * @Date 2022/3/31
  * Given a triangle, find the minimum path sum from top to bottom.
  * Each step you may move to adjacent numbers on the row below.
  * <p>
@@ -12,8 +16,6 @@
  * ]
  * The minimum path sum from top to bottom is 11 (i.e., 2 + 3 + 5 + 1 = 11).
  */
-package n.series.DynamicProgramming;
-
 public class Triangle {
 
     public static void main(String[] args) {
@@ -36,10 +38,10 @@ public class Triangle {
 
     public int minimumTotal(int[][] triangle) {
         // write your code here
-        if (triangle.length == 0 || triangle == null) {
+        if (triangle == null || triangle.length == 0) {
             return -1;
         }
-        if (triangle[0].length == 0 || triangle[0] == null) {
+        if (triangle[0] == null || triangle[0].length == 0) {
             return -1;
         }
         int n = triangle.length;
@@ -66,10 +68,10 @@ public class Triangle {
 
     public int minimumTotal2(int[][] triangle) {
         // write your code here
-        if (triangle.length == 0 || triangle == null) {
+        if (triangle == null || triangle.length == 0) {
             return -1;
         }
-        if (triangle[0].length == 0 || triangle[0] == null) {
+        if (triangle[0] == null || triangle[0].length == 0) {
             return -1;
         }
         int n = triangle.length;
