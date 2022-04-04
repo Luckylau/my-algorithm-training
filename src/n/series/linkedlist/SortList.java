@@ -3,6 +3,8 @@ package n.series.linkedlist;
 import util.ListNode;
 
 /**
+ * @Author luckylau
+ * @Date 2022/3/31
  * Sort a linked list in O(n log n) time using constant space complexity.
  */
 public class SortList {

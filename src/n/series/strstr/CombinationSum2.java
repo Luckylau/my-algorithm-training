@@ -1,4 +1,12 @@
+package n.series.strstr;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
+ * @Author luckylau
+ * @Date 2022/3/31
  * Given a collection of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.
  * Each number in C may only be used once in the combination.
  * Notice
@@ -6,12 +14,6 @@
  * Elements in a combination (a1, a2, … , ak) must be in non-descending order. (ie, a1 ≤ a2 ≤ … ≤ ak).
  * The solution set must not contain duplicate combinations.
  */
-package n.series.strStr;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 public class CombinationSum2 {
 
     public static void main(String[] args) {

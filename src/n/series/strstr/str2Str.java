@@ -1,4 +1,8 @@
+package n.series.strstr;
+
 /**
+ * @Author luckylau
+ * @Date 2022/3/31
  * For a given source string and a target string, you should output the first index(from 0) of target string in source string.
  * If target does not exist in source, just return -1.
  * Clarification
@@ -6,8 +10,6 @@
  * Not necessary. When you meet this problem in a real interview, the interviewer may just want to test your basic implementation ability.
  * But make sure your confirm with the interviewer first
  */
-package n.series.strStr;
-
 public class str2Str {
 
     public static void main(String[] args) {

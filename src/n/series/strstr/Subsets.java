@@ -1,14 +1,16 @@
+package n.series.strstr;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
 /**
+ * @Author luckylau
+ * @Date 2022/3/31
  * Given a set of distinct integers, return all possible subsets.
  * Notice
  * Elements in a subset must be in non-descending order.
  * The solution set must not contain duplicate subsets.
  */
-package n.series.strStr;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class Subsets {
 
     public static void main(String[] args) {

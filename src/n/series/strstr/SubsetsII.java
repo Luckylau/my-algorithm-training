@@ -1,8 +1,12 @@
-package n.series.strStr;
+package n.series.strstr;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
+/**
+ * @Author luckylau
+ * @Date 2022/3/31
+ */
 public class SubsetsII {
 
     public static void main(String[] args) {

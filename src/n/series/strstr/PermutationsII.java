@@ -1,4 +1,12 @@
+package n.series.strstr;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
+ * @Author luckylau
+ * @Date 2022/3/31
  * Given a list of numbers with duplicate number in it. Find all unique permutations.
  * Example
  * For numbers [1,2,2] the unique permutations are:
@@ -8,12 +16,6 @@
  * [2,2,1]
  * ]
  */
-package n.series.strStr;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 public class PermutationsII {
 
     public static void main(String[] args) {

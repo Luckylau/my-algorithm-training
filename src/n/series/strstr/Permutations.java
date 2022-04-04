@@ -1,4 +1,12 @@
+package n.series.strstr;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
+ * @Author luckylau
+ * @Date 2022/3/31
  * Given a list of numbers, return all possible permutations.
  * Example
  * For nums = [1,2,3], the permutations are:
@@ -13,12 +21,6 @@
  * Challenge
  * Do it without recursion.
  */
-package n.series.strStr;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 public class Permutations {
 
     public static void main(String[] args) {
