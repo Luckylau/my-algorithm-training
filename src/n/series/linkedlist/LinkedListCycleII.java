@@ -1,14 +1,14 @@
-package n.series.LinkedList;
+package n.series.linkedlist;
+
+import util.ListNode;
 
 /**
- * Given a linked list, determine if it has a cycle in it.
- * Example
- * Given -21->10->4->5, tail connects to node index 1, return true
- * <p>
- * Follow up:
- * Can you solve it without using extra space?
+ * @Author luckylau
+ * @Date 2022/3/31
+ * Given a linked list, return the node where the cycle begins.
+ * If there is no cycle, return null.
  */
-public class LinkedListCycle {
+public class LinkedListCycleII {
 
     public static void main(String[] args) {
         ListNode head = new ListNode(1);
@@ -20,30 +20,32 @@ public class LinkedListCycle {
         node1.next = node2;
         node2.next = node3;
         node3.next = node4;
-        LinkedListCycle linkedListCycle = new LinkedListCycle();
-        System.out.println(linkedListCycle.hasCycle(head));
         node4.next = node2;
-        System.out.println(linkedListCycle.hasCycle(head));
+        LinkedListCycleII linkedListCycleII = new LinkedListCycleII();
+        System.out.println(linkedListCycleII.detectCycle(head).val);
 
     }
 
-    public boolean hasCycle(ListNode head) {
+    public ListNode detectCycle(ListNode head) {
         if (head == null || head.next == null) {
-            return false;
+            return null;
         }
-
         ListNode slow = head;
         ListNode fast = head.next;
+
         while (slow != fast) {
             if (fast == null || fast.next == null) {
-                return false;
+                return null;
             }
             slow = slow.next;
             fast = fast.next.next;
-
-
         }
-        return true;
+
+        while (head != slow.next) {
+            head = head.next;
+            slow = slow.next;
+        }
+        return head;
     }
 
 }

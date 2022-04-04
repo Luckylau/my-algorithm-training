@@ -1,40 +1,43 @@
-/**
- * Sort a linked list in O(n log n) time using constant space complexity.
- */
-package n.series.LinkedList;
+package n.series.linkedlist;
 
-public class SortList {
+import util.ListNode;
+
+/**
+ * @Author luckylau
+ * @Date 2022/3/31
+ * Given a singly linked list L: L0 --> L1 ..... Ln-1 --> Ln
+ * reorder it to: L0 --> Ln --> L1 --> Ln-1 --> L2 --> Ln-2 --> ...
+ */
+public class ReorderList {
 
     public static void main(String[] args) {
         ListNode head = new ListNode(1);
-        ListNode node = new ListNode(4);
+        ListNode node = new ListNode(2);
         ListNode node2 = new ListNode(3);
-        ListNode node3 = new ListNode(2);
+        ListNode node3 = new ListNode(4);
         ListNode node4 = new ListNode(5);
-        ListNode node5 = new ListNode(2);
         head.next = node;
         node.next = node2;
         node2.next = node3;
         node3.next = node4;
-        node4.next = node5;
         System.out.println(ListNode.printListfromHeadtoTail(head));
-        SortList sortList = new SortList();
-        sortList.sortList(head);
+        ReorderList reorderList = new ReorderList();
+        reorderList.reorderList(head);
         System.out.println(ListNode.printListfromHeadtoTail(head));
 
     }
 
-    public ListNode sortList(ListNode head) {
+    public void reorderList(ListNode head) {
         // write your code here
         if (head == null || head.next == null) {
-            return head;
+            return;
         }
-
         ListNode mid = findMiddle(head);
-        ListNode right = sortList(mid.next);
+        ListNode right = reverse(mid.next);
         mid.next = null;
-        ListNode left = sortList(head);
-        return mergeSortList(right, left);
+        merge(head, right);
+
+
     }
 
     private ListNode findMiddle(ListNode head) {
@@ -47,17 +50,30 @@ public class SortList {
         return slow;
     }
 
-    private ListNode mergeSortList(ListNode l1, ListNode l2) {
+    private ListNode reverse(ListNode head) {
+        ListNode pre = null;
+        while (head != null) {
+            ListNode tmp = head.next;
+            head.next = pre;
+            pre = head;
+            head = tmp;
+        }
+        return pre;
+    }
+
+    private void merge(ListNode l1, ListNode l2) {
+        int index = 0;
         ListNode dummy = new ListNode(-1);
         ListNode pointer = dummy;
         while (l1 != null && l2 != null) {
-            if (l1.val > l2.val) {
-                pointer.next = l2;
-                l2 = l2.next;
-            } else {
+            if (index % 2 == 0) {
                 pointer.next = l1;
                 l1 = l1.next;
+            } else {
+                pointer.next = l2;
+                l2 = l2.next;
             }
+            index++;
             pointer = pointer.next;
         }
 
@@ -67,7 +83,6 @@ public class SortList {
         if (l2 != null) {
             pointer.next = l2;
         }
-        return dummy.next;
     }
 
 }

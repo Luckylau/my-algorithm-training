@@ -1,6 +1,10 @@
-package n.series.LinkedList;
+package n.series.linkedlist;
+
+import util.ListNode;
 
 /**
+ * @Author luckylau
+ * @Date 2022/3/31
  * Reverse a linked list.
  * Example
  * For linked list 1->2->3, the reversed linked list is 3->2->1

@@ -1,4 +1,12 @@
+package n.series.linkedlist;
+
+import util.ListNode;
+
+import java.util.*;
+
 /**
+ * @Author luckylau
+ * @Date 2022/3/31
  * Merge k sorted linked lists and return it as one sorted list.
  * Analyze and describe its complexity.
  * Example
@@ -9,14 +17,9 @@
  * -1->null
  * ],
  */
-package n.series.LinkedList;
-
-import java.util.*;
-
 public class MergekSortedLists {
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
         ListNode node1 = new ListNode(3);
         ListNode node2 = new ListNode(5);
         ListNode node3 = new ListNode(7);
@@ -74,7 +77,6 @@ public class MergekSortedLists {
 
             @Override
             public int compare(ListNode o1, ListNode o2) {
-                // TODO Auto-generated method stub
                 return o1.val - o2.val;
             }
         });

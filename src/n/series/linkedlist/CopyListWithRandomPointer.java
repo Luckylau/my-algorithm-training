@@ -1,12 +1,14 @@
 /**
+ * @Author luckylau
+ * @Date 2022/3/31
  * A linked list is given such that each node contains an additional random pointer which could point to any node in the list or null.
  * Return a deep copy of the list.
  */
-package n.series.LinkedList;
+package n.series.linkedlist;
 
 import java.util.HashMap;
 
-public class CopyListwithRandomPointer {
+public class CopyListWithRandomPointer {
 
     public static void main(String[] args) {
         RandomListNode head = new RandomListNode(1);
@@ -21,7 +23,7 @@ public class CopyListwithRandomPointer {
         node.random = node3;
         System.out.println(RandomListNode.printListfromHeadtoTail(head));
         System.out.println(RandomListNode.printListRandom(head));
-        CopyListwithRandomPointer copyListwithRandomPointer = new CopyListwithRandomPointer();
+        CopyListWithRandomPointer copyListwithRandomPointer = new CopyListWithRandomPointer();
         RandomListNode head2 = copyListwithRandomPointer.copyRandomList(head);
         System.out.println(RandomListNode.printListfromHeadtoTail(head2));
         System.out.println(RandomListNode.printListRandom(head2));

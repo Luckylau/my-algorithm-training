@@ -1,6 +1,10 @@
-package n.series.LinkedList;
+package n.series.linkedlist;
+
+import util.ListNode;
 
 /**
+ * @Author luckylau
+ * @Date 2022/3/31
  * Write a program to find the node at which the intersection of two singly linked lists begins.
  * Notice
  * If the two linked lists have no intersection at all, return null.
@@ -14,7 +18,7 @@ package n.series.LinkedList;
  * <p>
  * B:     b1 ->b2 ->b3
  */
-public class IntersectionofTwoLinkedLists {
+public class IntersectionOfTwoLinkedLists {
 
     public static void main(String[] args) {
         ListNode headA = new ListNode(1);
@@ -38,7 +42,7 @@ public class IntersectionofTwoLinkedLists {
         node8.next = node2;
         System.out.println(ListNode.printListfromHeadtoTail(headA));
         System.out.println(ListNode.printListfromHeadtoTail(headB));
-        IntersectionofTwoLinkedLists intersectionofTwoLinkedLists = new IntersectionofTwoLinkedLists();
+        IntersectionOfTwoLinkedLists intersectionofTwoLinkedLists = new IntersectionOfTwoLinkedLists();
         System.out.println(intersectionofTwoLinkedLists.getIntersectionNode(headA, headB).val);
 
 

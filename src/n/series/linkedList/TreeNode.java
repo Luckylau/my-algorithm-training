@@ -1,4 +1,4 @@
-package n.series.LinkedList;
+package n.series.linkedlist;
 
 import java.util.ArrayList;
 

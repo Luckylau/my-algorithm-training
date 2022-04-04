@@ -1,6 +1,10 @@
-package n.series.LinkedList;
+package n.series.linkedlist;
+
+import util.ListNode;
 
 /**
+ * @Author luckylau
+ * @Date 2022/3/31
  * Given a sorted linked list, delete all nodes that have duplicate numbers,
  * leaving only distinct numbers from the original list.
  * Example

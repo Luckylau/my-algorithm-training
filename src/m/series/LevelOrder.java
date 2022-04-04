@@ -1,6 +1,6 @@
 package m.series;
 
-import n.series.LinkedList.TreeNode;
+import n.series.linkedlist.TreeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

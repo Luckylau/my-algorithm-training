@@ -1,11 +1,15 @@
+package n.series.linkedlist;
+
+import util.ListNode;
+
 /**
+ * @Author luckylau
+ * @Date 2022/3/31
  * Merge two sorted (ascending) linked lists and return it as a new sorted list.
  * The new sorted list should be made by splicing together the nodes of the two lists and sorted in ascending order.
  * Example
  * Given 1->3->8->11->15->null, 2->null , return 1->2->3->8->11->15->null.
  */
-package n.series.LinkedList;
-
 public class MergeTwoSortedLists {
 
     public static void main(String[] args) {

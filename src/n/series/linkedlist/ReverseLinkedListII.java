@@ -1,4 +1,10 @@
+package n.series.linkedlist;
+
+import util.ListNode;
+
 /**
+ * @Author luckylau
+ * @Date 2022/3/31
  * Reverse a linked list from position m to n.
  * Example
  * Given 1->2->3->4->5->NULL, m = 2 and n = 4, return 1->4->3->2->5->NULL.
@@ -6,8 +12,6 @@
  * Challenge
  * Reverse it in-place and in one-pass
  */
-package n.series.LinkedList;
-
 public class ReverseLinkedListII {
 
     public static void main(String[] args) {

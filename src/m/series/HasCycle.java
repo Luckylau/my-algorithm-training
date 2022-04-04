@@ -1,6 +1,6 @@
 package m.series;
 
-import n.series.LinkedList.ListNode;
+import util.ListNode;
 
 /**
  * 141. 环形链表

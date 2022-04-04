@@ -1,6 +1,10 @@
-package n.series.LinkedList;
+package n.series.linkedlist;
+
+import util.ListNode;
 
 /**
+ * @Author luckylau
+ * @Date 2022/3/31
  * Given a singly linked list where elements are sorted in ascending order,
  * convert it to a height balanced BST.
  * Example
@@ -8,7 +12,7 @@ package n.series.LinkedList;
  * 1->2->3  =>      / \
  * 1   3
  */
-public class ConvertSortedListtoBalanced {
+public class ConvertSortedListToBalanced {
 
     public static void main(String[] args) {
         ListNode head = new ListNode(1);
@@ -25,7 +29,7 @@ public class ConvertSortedListtoBalanced {
         node3.next = node4;
         node4.next = node5;
         node5.next = node6;
-        ConvertSortedListtoBalanced convertSortedListtoBalanced = new ConvertSortedListtoBalanced();
+        ConvertSortedListToBalanced convertSortedListtoBalanced = new ConvertSortedListToBalanced();
         System.out.println(TreeNode.printTreeNodebylevelOrder(convertSortedListtoBalanced.sortedListToBST(head)));
     }
 
@@ -38,16 +42,16 @@ public class ConvertSortedListtoBalanced {
             return new TreeNode(head.val);
         }
 
-        ListNode midbefore = findMidbefore(head);
-        ListNode mid = midbefore.next;
+        ListNode midBefore = findMidBefore(head);
+        ListNode mid = midBefore.next;
         TreeNode root = new TreeNode(mid.val);
-        midbefore.next = null;
+        midBefore.next = null;
         root.left = sortedListToBST(head);
         root.right = sortedListToBST(mid.next);
         return root;
     }
 
-    private ListNode findMidbefore(ListNode head) {
+    private ListNode findMidBefore(ListNode head) {
         ListNode slow = head;
         ListNode fast = head.next;
         fast = fast.next;
