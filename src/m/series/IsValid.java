@@ -8,7 +8,7 @@ import java.util.Stack;
  * @Author luckylau
  * @Date 2022/4/11
  */
-public class isValid {
+public class IsValid {
     public boolean isValid(String s) {
         if (s == null || s.length() == 0) {
             return false;
