@@ -20,7 +20,7 @@ public class FirstMissingPositive {
         for (int i = 0; i < nums.length; i++) {
             int index = Math.abs(nums[i]) - 1;
             if (index < n) {
-                nums[index] = -Math.abs(nums[i]);
+                nums[index] = -Math.abs(nums[index]);
             }
         }
         for (int i = 0; i < nums.length; i++) {
